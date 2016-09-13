@@ -1,6 +1,6 @@
 # HBWXEyesAnimation
-模仿微信下拉的眼睛动画
-##1.1先画出眼睛里面白色的光一共有2点
+#模仿微信下拉的眼睛动画
+###1.1先画出眼睛里面白色的光一共有2点
 ```
 - (UIBezierPath *)lightOnePath
 {
@@ -13,6 +13,8 @@
     
     return _lightOnePath;
 }
+```
+```
 - (UIBezierPath *)lightTwoPath
 {
     if (!_lightTwoPath) {
@@ -24,7 +26,7 @@
     return _lightTwoPath;
 }
 ```
-##1.2画出里面的圆圈
+###1.2画出里面的圆圈
 ```
 - (UIBezierPath *)circlePath
 {
@@ -36,7 +38,7 @@
     return _circlePath;
 }
 ```
-##1.3画外面上下弧线
+###1.3画外面上下弧线
 ```
 - (UIBezierPath *)topArcPath
 {
@@ -50,6 +52,7 @@
     return _topArcPath;
 }
 ```
+```
 - (UIBezierPath *)bottomArcPath
 {
     if (!_bottomArcPath) {
@@ -62,7 +65,7 @@
     return _bottomArcPath;
 }
 ```
-##1.4通过tableview的contentoffset来控制动画的实现
+###1.4通过tableview的contentoffset来控制动画的实现
 ```
 - (void)anmationProgress:(CGFloat)offset
 {
